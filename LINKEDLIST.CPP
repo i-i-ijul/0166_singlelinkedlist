@@ -63,7 +63,7 @@ public:
         return (START == NULL);
     }
 
-    bool search (int nim, Node **previous, Node **current)
+    bool search(int nim, Node **previous, Node **current)
     {
         *previous = START;
         *current = (*current)->next;
@@ -73,28 +73,30 @@ public:
             *previous = *current;
             *current = (*current)->next;
         }
-        
+
         return (*current != NULL);
     }
 
-        bool delNode(int nim)
-        {
-            Node *current, *previous;
-            if (!search(nim, &previous, &current))
+    bool delNode(int nim)
+    {
+        Node *current, *previous;
+        if (!search(nim, &previous, &current))
             return false;
 
-            if (current == START)
+        if (current == START)
             START = START->next;
-            else
+        else
             previous->next = current->next;
 
-            delete current;
-            return true;
-        }
+        delete current;
+        return true;
+    }
 
-        void traverse()
+    void traverse()
+    {
+        if (listEmpty())
         {
-            if (listEmpty())
-            {}
+            
         }
+    }
 };
