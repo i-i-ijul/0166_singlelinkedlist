@@ -161,6 +161,26 @@ int main()
         {
             mhs.traverse();
         }
+        break;
+        case '4':
+        {
+            if (mhs.listEmpty() == true)
+            {
+                cout << "\nList kosong\n";
+                break;
+            }
+            Node *previous, *current;
+            cout << endl
+                 << "masukkan no mahasiswa yang dicari : ";
+            cin >> nim;
+            if (mhs.search(nim, &previous, &current) == false)
+                cout << endl
+                     << "Data tidak ditemukan" << endl;
+            else
+            {
+                cout << endl
+            }
+        }
         }
     }
 }
