@@ -193,6 +193,7 @@ int main()
         {
             cout << "Pilihan salah !." << endl;
         }
+        break;
         }
     }
 }
