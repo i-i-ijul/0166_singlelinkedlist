@@ -76,7 +76,6 @@ public:
         
         return (*current != NULL);
     }
-
     
 
 };
