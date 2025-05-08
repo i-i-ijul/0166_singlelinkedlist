@@ -32,7 +32,7 @@ public:
         {
             if ((START != NULL) && (nim == START->noMhs))
             {
-                cout << "\nDuplikasi noMhs tidak diijinkan"
+                cout << "\nDuplikasi noMhs tidak diijinkan";
                 return;
             }
             nodeBaru->next = START;
@@ -48,7 +48,7 @@ public:
             if (nim == current->noMhs)
             {
                 cout << "\nDuplikasi noMhs tidak diijinkan\n";
-                
+
             }
         }
     }
